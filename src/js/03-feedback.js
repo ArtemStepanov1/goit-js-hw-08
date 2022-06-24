@@ -13,7 +13,7 @@ form.addEventListener('input', throttle(setMessageToLocal, 500));
 form.addEventListener('submit', resetAndSubmitForm);
 
 function validForm() {
-   valid = true;
+   let valid = true;
    if(inputEmail.value === "" || inputMessage.value === "") {
       valid = false;
    }
